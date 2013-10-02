@@ -1,0 +1,90 @@
+\hypertarget{classMainWindow}{
+\section{MainWindow Class Reference}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+}
+
+
+the main re-\/sizable window which contains a \hyperlink{classGLWindow}{GLWindow} widget used to hold our basic gl applications  
+
+
+{\ttfamily \#include $<$MainWindow.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a46c320729b0e05c9fbb29bc3a0378aed}{MainWindow} (std::string \_\-name, QWidget $\ast$\_\-parent=0)
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$MainWindow} ()
+\begin{DoxyCompactList}\small\item\em dtor free up the \hyperlink{classGLWindow}{GLWindow} and all resources \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParser}{Parser} $\ast$ \hyperlink{classMainWindow_ada47ec5452a8928b731bf7167e6d69dc}{m\_\-parser}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classParser}{Parser} to read in config file. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_a3c2e352934c6318d405c3d2b0e07729c}{keyPressEvent} (QKeyEvent $\ast$\_\-event)
+\begin{DoxyCompactList}\small\item\em override the keyPressEvent inherited from QObject so we can handle key presses. \item\end{DoxyCompactList}\item 
+void \hyperlink{classMainWindow_a8ed35ee3d9b815ed32c11d1e13957503}{resizeEvent} (QResizeEvent $\ast$\_\-event)
+\begin{DoxyCompactList}\small\item\em override the resizeEvent inherited from QObject so we can handle key presses. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the main re-\/sizable window which contains a \hyperlink{classGLWindow}{GLWindow} widget used to hold our basic gl applications 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMainWindow_a46c320729b0e05c9fbb29bc3a0378aed}{
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\subsubsection[{MainWindow}]{\setlength{\rightskip}{0pt plus 5cm}MainWindow::MainWindow (std::string {\em \_\-name}, \/  QWidget $\ast$ {\em \_\-parent} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{classMainWindow_a46c320729b0e05c9fbb29bc3a0378aed}
+
+
+constructor 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-parent}]the parent window the for this window \end{DoxyParams}
+\hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{
+\index{MainWindow@{MainWindow}!$\sim$MainWindow@{$\sim$MainWindow}}
+\index{$\sim$MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\subsubsection[{$\sim$MainWindow}]{\setlength{\rightskip}{0pt plus 5cm}MainWindow::$\sim$MainWindow ()}}
+\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+dtor free up the \hyperlink{classGLWindow}{GLWindow} and all resources 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMainWindow_a3c2e352934c6318d405c3d2b0e07729c}{
+\index{MainWindow@{MainWindow}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!MainWindow@{MainWindow}}
+\subsubsection[{keyPressEvent}]{\setlength{\rightskip}{0pt plus 5cm}void MainWindow::keyPressEvent (QKeyEvent $\ast$ {\em \_\-event})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMainWindow_a3c2e352934c6318d405c3d2b0e07729c}
+
+
+override the keyPressEvent inherited from QObject so we can handle key presses. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-event}]the event to process \end{DoxyParams}
+\hypertarget{classMainWindow_a8ed35ee3d9b815ed32c11d1e13957503}{
+\index{MainWindow@{MainWindow}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!MainWindow@{MainWindow}}
+\subsubsection[{resizeEvent}]{\setlength{\rightskip}{0pt plus 5cm}void MainWindow::resizeEvent (QResizeEvent $\ast$ {\em \_\-event})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classMainWindow_a8ed35ee3d9b815ed32c11d1e13957503}
+
+
+override the resizeEvent inherited from QObject so we can handle key presses. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-event}]the event to process \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMainWindow_ada47ec5452a8928b731bf7167e6d69dc}{
+\index{MainWindow@{MainWindow}!m\_\-parser@{m\_\-parser}}
+\index{m\_\-parser@{m\_\-parser}!MainWindow@{MainWindow}}
+\subsubsection[{m\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parser}$\ast$ {\bf MainWindow::m\_\-parser}}}
+\label{classMainWindow_ada47ec5452a8928b731bf7167e6d69dc}
+
+
+\hyperlink{classParser}{Parser} to read in config file. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{MainWindow_8h}{MainWindow.h}\item 
+src/\hyperlink{MainWindow_8cpp}{MainWindow.cpp}\end{DoxyCompactItemize}

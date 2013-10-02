@@ -1,0 +1,159 @@
+\hypertarget{classFluidSystem}{
+\section{FluidSystem Class Reference}
+\label{classFluidSystem}\index{FluidSystem@{FluidSystem}}
+}
+
+
+{\ttfamily \#include $<$FluidSystem.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFluidSystem_a026c527ec418ae285285ffb2b877d1dc}{FluidSystem} ()
+\begin{DoxyCompactList}\small\item\em default constructor \item\end{DoxyCompactList}\item 
+\hyperlink{classFluidSystem_aad830c205f0647117beebc80f8c14969}{FluidSystem} (const struct \hyperlink{structSimulationParams}{SimulationParams} \&\_\-simParams, const struct \hyperlink{structFluidParams}{FluidParams} \&\_\-fluidParams, const std::string \&\_\-shadername, ngl::TransformStack $\ast$\_\-transformStack)
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+\hyperlink{classFluidSystem_a568108df17c8fe0ec5fce2ad225ae0cc}{$\sim$FluidSystem} ()
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_afbae2beaf10484816f73ca0d0c9fb754}{reset} (const struct \hyperlink{structSimulationParams}{SimulationParams} \&\_\-simParams, const struct \hyperlink{structFluidParams}{FluidParams} \&\_\-fluidParams)
+\begin{DoxyCompactList}\small\item\em resets the fluid when button pressed by user \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_a4f66756bd2842641f935acb32f14b137}{updateFluid} ()
+\begin{DoxyCompactList}\small\item\em update the fluid system for the next time step \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_a2301443220f5e3366016679325cbef9e}{setCamera} (ngl::Camera $\ast$\_\-cam)
+\begin{DoxyCompactList}\small\item\em set camera \item\end{DoxyCompactList}\item 
+ngl::Camera $\ast$ \hyperlink{classFluidSystem_a2b41f17fbf8fe86977323771e83c5531}{getCamera} () const 
+\begin{DoxyCompactList}\small\item\em get camera \item\end{DoxyCompactList}\item 
+ngl::TransformStack $\ast$ \hyperlink{classFluidSystem_a961c577b66bbe91d8cef8889a1b4a9b1}{getTransformStack} () const 
+\begin{DoxyCompactList}\small\item\em get transform stack \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_af1282b7bea50c3f1ff1c6173bd430002}{setBBox} (\hyperlink{classFluidBBox}{FluidBBox} $\ast$\_\-fbbox)
+\begin{DoxyCompactList}\small\item\em set bounding box \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_ab2e10707d179033c443eebb39f41ae6e}{draw} (\hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3}{DrawMode} \_\-mode, unsigned int \_\-obstacleMode)
+\begin{DoxyCompactList}\small\item\em draw the new fluid \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_a26bb00d14f54788b55f18135f653006b}{drawSpheres} (\hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3}{DrawMode} \_\-mode)
+\begin{DoxyCompactList}\small\item\em draws coloured spheres for particles \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_a6e6cf643c1a801897ddb18b1581bc882}{createObstacle} (\hyperlink{Common_8h_a9852a22595ceae4debd70f078e037971}{ObstacleType} \_\-type, const ngl::Vec3 \&\_\-pos, const ngl::Vec3 \&\_\-size, const std::string \&\_\-shaderName, const \hyperlink{structSimulationParams}{SimulationParams} \&\_\-params)
+\begin{DoxyCompactList}\small\item\em creates an obstacle \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidSystem_af1f59f82a964eacdb1c3618f804fa7a3}{removeObstacles} ()
+\begin{DoxyCompactList}\small\item\em erases the last obstacle \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFluidSystem_a026c527ec418ae285285ffb2b877d1dc}{
+\index{FluidSystem@{FluidSystem}!FluidSystem@{FluidSystem}}
+\index{FluidSystem@{FluidSystem}!FluidSystem@{FluidSystem}}
+\subsubsection[{FluidSystem}]{\setlength{\rightskip}{0pt plus 5cm}FluidSystem::FluidSystem ()}}
+\label{classFluidSystem_a026c527ec418ae285285ffb2b877d1dc}
+
+
+default constructor \hypertarget{classFluidSystem_aad830c205f0647117beebc80f8c14969}{
+\index{FluidSystem@{FluidSystem}!FluidSystem@{FluidSystem}}
+\index{FluidSystem@{FluidSystem}!FluidSystem@{FluidSystem}}
+\subsubsection[{FluidSystem}]{\setlength{\rightskip}{0pt plus 5cm}FluidSystem::FluidSystem (const struct {\bf SimulationParams} \& {\em \_\-simParams}, \/  const struct {\bf FluidParams} \& {\em \_\-fluidParams}, \/  const std::string \& {\em \_\-shadername}, \/  ngl::TransformStack $\ast$ {\em \_\-transformStack})}}
+\label{classFluidSystem_aad830c205f0647117beebc80f8c14969}
+
+
+constructor 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-simParams}]simulation parameters \item[{\em \_\-fluidParams}]fluid parameters \item[{\em \_\-shadername}]shader to render fluid with \item[{\em \_\-transformStack}]pointer to the Transform stack for rendering \end{DoxyParams}
+\hypertarget{classFluidSystem_a568108df17c8fe0ec5fce2ad225ae0cc}{
+\index{FluidSystem@{FluidSystem}!$\sim$FluidSystem@{$\sim$FluidSystem}}
+\index{$\sim$FluidSystem@{$\sim$FluidSystem}!FluidSystem@{FluidSystem}}
+\subsubsection[{$\sim$FluidSystem}]{\setlength{\rightskip}{0pt plus 5cm}FluidSystem::$\sim$FluidSystem ()}}
+\label{classFluidSystem_a568108df17c8fe0ec5fce2ad225ae0cc}
+
+
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classFluidSystem_a6e6cf643c1a801897ddb18b1581bc882}{
+\index{FluidSystem@{FluidSystem}!createObstacle@{createObstacle}}
+\index{createObstacle@{createObstacle}!FluidSystem@{FluidSystem}}
+\subsubsection[{createObstacle}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::createObstacle ({\bf ObstacleType} {\em \_\-type}, \/  const ngl::Vec3 \& {\em \_\-pos}, \/  const ngl::Vec3 \& {\em \_\-size}, \/  const std::string \& {\em \_\-shaderName}, \/  const {\bf SimulationParams} \& {\em \_\-params})}}
+\label{classFluidSystem_a6e6cf643c1a801897ddb18b1581bc882}
+
+
+creates an obstacle 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-type}]enum type of the obstacle to create \item[{\em \_\-pos}]center of the obstacle \item[{\em \_\-size}]size of the obstacle \item[{\em \_\-shaderName}]shader to draw with \item[{\em \_\-params}]simulation parameters \end{DoxyParams}
+\hypertarget{classFluidSystem_ab2e10707d179033c443eebb39f41ae6e}{
+\index{FluidSystem@{FluidSystem}!draw@{draw}}
+\index{draw@{draw}!FluidSystem@{FluidSystem}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::draw ({\bf DrawMode} {\em \_\-mode}, \/  unsigned int {\em \_\-obstacleMode})}}
+\label{classFluidSystem_ab2e10707d179033c443eebb39f41ae6e}
+
+
+draw the new fluid 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-mode}]drawing mode for particles \item[{\em \_\-obstacleMode}]wireframe or solid shading for obstacles \end{DoxyParams}
+\hypertarget{classFluidSystem_a26bb00d14f54788b55f18135f653006b}{
+\index{FluidSystem@{FluidSystem}!drawSpheres@{drawSpheres}}
+\index{drawSpheres@{drawSpheres}!FluidSystem@{FluidSystem}}
+\subsubsection[{drawSpheres}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::drawSpheres ({\bf DrawMode} {\em \_\-mode})}}
+\label{classFluidSystem_a26bb00d14f54788b55f18135f653006b}
+
+
+draws coloured spheres for particles 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-mode}]drawing mode for particles \end{DoxyParams}
+\hypertarget{classFluidSystem_a2b41f17fbf8fe86977323771e83c5531}{
+\index{FluidSystem@{FluidSystem}!getCamera@{getCamera}}
+\index{getCamera@{getCamera}!FluidSystem@{FluidSystem}}
+\subsubsection[{getCamera}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Camera$\ast$ FluidSystem::getCamera () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFluidSystem_a2b41f17fbf8fe86977323771e83c5531}
+
+
+get camera \hypertarget{classFluidSystem_a961c577b66bbe91d8cef8889a1b4a9b1}{
+\index{FluidSystem@{FluidSystem}!getTransformStack@{getTransformStack}}
+\index{getTransformStack@{getTransformStack}!FluidSystem@{FluidSystem}}
+\subsubsection[{getTransformStack}]{\setlength{\rightskip}{0pt plus 5cm}ngl::TransformStack$\ast$ FluidSystem::getTransformStack () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFluidSystem_a961c577b66bbe91d8cef8889a1b4a9b1}
+
+
+get transform stack \hypertarget{classFluidSystem_af1f59f82a964eacdb1c3618f804fa7a3}{
+\index{FluidSystem@{FluidSystem}!removeObstacles@{removeObstacles}}
+\index{removeObstacles@{removeObstacles}!FluidSystem@{FluidSystem}}
+\subsubsection[{removeObstacles}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::removeObstacles ()}}
+\label{classFluidSystem_af1f59f82a964eacdb1c3618f804fa7a3}
+
+
+erases the last obstacle \hypertarget{classFluidSystem_afbae2beaf10484816f73ca0d0c9fb754}{
+\index{FluidSystem@{FluidSystem}!reset@{reset}}
+\index{reset@{reset}!FluidSystem@{FluidSystem}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::reset (const struct {\bf SimulationParams} \& {\em \_\-simParams}, \/  const struct {\bf FluidParams} \& {\em \_\-fluidParams})}}
+\label{classFluidSystem_afbae2beaf10484816f73ca0d0c9fb754}
+
+
+resets the fluid when button pressed by user 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-simParams}]simulation settings \item[\mbox{$\leftarrow$} {\em \_\-fluidParams}]fluid settings \end{DoxyParams}
+\hypertarget{classFluidSystem_af1282b7bea50c3f1ff1c6173bd430002}{
+\index{FluidSystem@{FluidSystem}!setBBox@{setBBox}}
+\index{setBBox@{setBBox}!FluidSystem@{FluidSystem}}
+\subsubsection[{setBBox}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::setBBox ({\bf FluidBBox} $\ast$ {\em \_\-fbbox})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFluidSystem_af1282b7bea50c3f1ff1c6173bd430002}
+
+
+set bounding box 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-fbbox}]pointer to the bounding box \end{DoxyParams}
+\hypertarget{classFluidSystem_a2301443220f5e3366016679325cbef9e}{
+\index{FluidSystem@{FluidSystem}!setCamera@{setCamera}}
+\index{setCamera@{setCamera}!FluidSystem@{FluidSystem}}
+\subsubsection[{setCamera}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::setCamera (ngl::Camera $\ast$ {\em \_\-cam})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classFluidSystem_a2301443220f5e3366016679325cbef9e}
+
+
+set camera 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-cam}]pointer to the camera \end{DoxyParams}
+\hypertarget{classFluidSystem_a4f66756bd2842641f935acb32f14b137}{
+\index{FluidSystem@{FluidSystem}!updateFluid@{updateFluid}}
+\index{updateFluid@{updateFluid}!FluidSystem@{FluidSystem}}
+\subsubsection[{updateFluid}]{\setlength{\rightskip}{0pt plus 5cm}void FluidSystem::updateFluid ()}}
+\label{classFluidSystem_a4f66756bd2842641f935acb32f14b137}
+
+
+update the fluid system for the next time step 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{FluidSystem_8h}{FluidSystem.h}\item 
+src/\hyperlink{FluidSystem_8cpp}{FluidSystem.cpp}\end{DoxyCompactItemize}

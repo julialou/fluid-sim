@@ -1,0 +1,66 @@
+\hypertarget{classFluidBBox}{
+\section{FluidBBox Class Reference}
+\label{classFluidBBox}\index{FluidBBox@{FluidBBox}}
+}
+
+
+{\ttfamily \#include $<$FluidBBox.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFluidBBox_a6f5e309c5ac43a251aca7145c0864c66}{FluidBBox} ()
+\begin{DoxyCompactList}\small\item\em default ctor \item\end{DoxyCompactList}\item 
+\hyperlink{classFluidBBox_a7309a16e038c8798d2f2ac1242e84e15}{FluidBBox} (const struct \hyperlink{structSimulationParams}{SimulationParams} \&\_\-params)
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidBBox_a48770a0ee9a759fed5d77182a95c7fc5}{resetBBox} (const struct \hyperlink{structSimulationParams}{SimulationParams} \&\_\-params)
+\begin{DoxyCompactList}\small\item\em resets bounding box when button is clicked \item\end{DoxyCompactList}\item 
+void \hyperlink{classFluidBBox_ae7da91cd968abc970301bec976db30d7}{BBoxCollide} (\hyperlink{classParticle}{Particle} \&\_\-particle)
+\begin{DoxyCompactList}\small\item\em detect collision with the box, updates velocity if there is a collision \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFluidBBox_a6f5e309c5ac43a251aca7145c0864c66}{
+\index{FluidBBox@{FluidBBox}!FluidBBox@{FluidBBox}}
+\index{FluidBBox@{FluidBBox}!FluidBBox@{FluidBBox}}
+\subsubsection[{FluidBBox}]{\setlength{\rightskip}{0pt plus 5cm}FluidBBox::FluidBBox ()}}
+\label{classFluidBBox_a6f5e309c5ac43a251aca7145c0864c66}
+
+
+default ctor \hypertarget{classFluidBBox_a7309a16e038c8798d2f2ac1242e84e15}{
+\index{FluidBBox@{FluidBBox}!FluidBBox@{FluidBBox}}
+\index{FluidBBox@{FluidBBox}!FluidBBox@{FluidBBox}}
+\subsubsection[{FluidBBox}]{\setlength{\rightskip}{0pt plus 5cm}FluidBBox::FluidBBox (const struct {\bf SimulationParams} \& {\em \_\-params})}}
+\label{classFluidBBox_a7309a16e038c8798d2f2ac1242e84e15}
+
+
+constructor 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-params}]simulation parameters \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFluidBBox_ae7da91cd968abc970301bec976db30d7}{
+\index{FluidBBox@{FluidBBox}!BBoxCollide@{BBoxCollide}}
+\index{BBoxCollide@{BBoxCollide}!FluidBBox@{FluidBBox}}
+\subsubsection[{BBoxCollide}]{\setlength{\rightskip}{0pt plus 5cm}void FluidBBox::BBoxCollide ({\bf Particle} \& {\em \_\-particle})}}
+\label{classFluidBBox_ae7da91cd968abc970301bec976db30d7}
+
+
+detect collision with the box, updates velocity if there is a collision 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-particle}]particle to collide with \end{DoxyParams}
+\hypertarget{classFluidBBox_a48770a0ee9a759fed5d77182a95c7fc5}{
+\index{FluidBBox@{FluidBBox}!resetBBox@{resetBBox}}
+\index{resetBBox@{resetBBox}!FluidBBox@{FluidBBox}}
+\subsubsection[{resetBBox}]{\setlength{\rightskip}{0pt plus 5cm}void FluidBBox::resetBBox (const struct {\bf SimulationParams} \& {\em \_\-params})}}
+\label{classFluidBBox_a48770a0ee9a759fed5d77182a95c7fc5}
+
+
+resets bounding box when button is clicked 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-params}]simulation parameters \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{FluidBBox_8h}{FluidBBox.h}\item 
+src/\hyperlink{FluidBBox_8cpp}{FluidBBox.cpp}\end{DoxyCompactItemize}

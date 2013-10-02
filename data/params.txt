@@ -1,0 +1,15 @@
+NumParticles 400
+SmoothRadius 0.02
+ContainerDimensions 2 1 0.5
+SimScale 0.1
+TimeStep 0.002
+RestDensity 600
+Mass 0.001
+Viscosity 1
+GasK 2.0
+Gravity 0.0 -9.8 0.0
+Tension .5
+Elasticity 0.05
+ParticleSize 0.01
+Threshold 19.5
+Isovalue -0.5

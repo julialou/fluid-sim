@@ -1,0 +1,299 @@
+\hypertarget{classParticle}{
+\section{Particle Class Reference}
+\label{classParticle}\index{Particle@{Particle}}
+}
+
+
+{\ttfamily \#include $<$Particle.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticle_ac6f39cecbf6d1995e2167dacbc0ca5ae}{Particle} (int \_\-idx, ngl::Vec3 \_\-pos, float \_\-simScale, const \hyperlink{structFluidParams}{FluidParams} \&\_\-params, const std::string \&\_\-shadername)
+\begin{DoxyCompactList}\small\item\em default constructor \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_a3c5efd4bc52c177c06439fc9eafe3438}{getPos} () const 
+\begin{DoxyCompactList}\small\item\em get the position \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_a65eba0070673cb425a23a8a8496f6a17}{getOldPos} () const 
+\begin{DoxyCompactList}\small\item\em get the previousposition \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_a3d46d63eefd8b6af8185907d545a973d}{getVelocity} () const 
+\begin{DoxyCompactList}\small\item\em get the velocity at time t \item\end{DoxyCompactList}\item 
+void \hyperlink{classParticle_ab78251d2269e22e833f9b7dfb45e832d}{setPos} (const ngl::Vec3 \&\_\-pos)
+\begin{DoxyCompactList}\small\item\em set the current position \item\end{DoxyCompactList}\item 
+void \hyperlink{classParticle_aaaecbd96e5c316275c3d208a45fc6c14}{setCollisionVelocity} (const ngl::Vec3 \&\_\-velocity)
+\begin{DoxyCompactList}\small\item\em allows the bounding box to update velocities at time t and t+0.5dt \item\end{DoxyCompactList}\item 
+void \hyperlink{classParticle_a5035778e0aa62ed6bc2d7f0ae45f723b}{updateColour} (const \hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3}{DrawMode} \_\-mode)
+\begin{DoxyCompactList}\small\item\em sets the colour of the particle \item\end{DoxyCompactList}\item 
+void \hyperlink{classParticle_a50dd1d5f58c0147fa3eba021adaf2752}{updateNeighbors} (const std::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&\_\-neighbors)
+\begin{DoxyCompactList}\small\item\em save the list of new neighbors \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classParticle_a24c5edf015f4c3d067acf1a054f31f93}{m\_\-id}
+\begin{DoxyCompactList}\small\item\em unique \hyperlink{classParticle}{Particle} ID \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_a2b5ef8d7207002ec8e887492a5bbe9f2}{m\_\-pos}
+\begin{DoxyCompactList}\small\item\em particle position \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_a4dcb620999acae9e32fa55ad39250c57}{m\_\-oldpos}
+\begin{DoxyCompactList}\small\item\em old position for grid \item\end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \hyperlink{classParticle_a250b194672f141d8439af838422f4efb}{m\_\-neighbors}
+\begin{DoxyCompactList}\small\item\em list of neighbours to smooth over \item\end{DoxyCompactList}\item 
+float \hyperlink{classParticle_a5f9a1515ebe899af685c77d4f119ab45}{m\_\-simScale}
+\begin{DoxyCompactList}\small\item\em simulation scale \item\end{DoxyCompactList}\item 
+float \hyperlink{classParticle_a5c0abc7791d1fbfd584e38d509b6088e}{m\_\-pressure}
+\begin{DoxyCompactList}\small\item\em particle's pressure in kg/(m$\ast$s$^\wedge$2) \item\end{DoxyCompactList}\item 
+float \hyperlink{classParticle_ab78b76aeb4d163132a0c27ea4c5beb75}{m\_\-mass}
+\begin{DoxyCompactList}\small\item\em particle's mass in kg \item\end{DoxyCompactList}\item 
+float \hyperlink{classParticle_a7ef5758b3dbc3ea263b670012f0c2fe5}{m\_\-density}
+\begin{DoxyCompactList}\small\item\em particle density in kg/m$^\wedge$3 \item\end{DoxyCompactList}\item 
+float \hyperlink{classParticle_a034612e9cd54961ae18980e9f36d2d93}{m\_\-restDensity}
+\begin{DoxyCompactList}\small\item\em rest density \item\end{DoxyCompactList}\item 
+float \hyperlink{classParticle_aa307c489c26622823817ce2083ac37a1}{m\_\-restDensity2}
+\begin{DoxyCompactList}\small\item\em 2x rest density for drawing \item\end{DoxyCompactList}\item 
+float \hyperlink{classParticle_acf841a001a93c2c613b13402e3947c16}{m\_\-size}
+\begin{DoxyCompactList}\small\item\em particle size \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_ab98ecf309cee41177c34fbd64f3f33a9}{m\_\-acceleration}
+\begin{DoxyCompactList}\small\item\em particle acceleration \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_ac4da3c37729ac9ed06664618d2a32f25}{m\_\-internalForce}
+\begin{DoxyCompactList}\small\item\em internal force on the particle \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_aa30f0a6fac4bee02f1082a2ebb04e7a5}{m\_\-externalForce}
+\begin{DoxyCompactList}\small\item\em external force on the particle \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_a3c6edff3c6a05d7eaac8eeb261bc0383}{m\_\-velocity}
+\begin{DoxyCompactList}\small\item\em particle velocity in m/s \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_ac1b3d740751addafa14c3533a155277a}{m\_\-prevVelocity}
+\begin{DoxyCompactList}\small\item\em particle velocity at time t-\/1/2(delta\_\-t) \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_ad27e14ae4bd99b1975413f6881d8aea1}{m\_\-nextVelocity}
+\begin{DoxyCompactList}\small\item\em particle velocity at time t+1/2(delta\_\-t) \item\end{DoxyCompactList}\item 
+ngl::Colour \hyperlink{classParticle_a6095555452db7271e32380a188e1004e}{m\_\-colour}
+\begin{DoxyCompactList}\small\item\em particle colour \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classParticle_a621671d7f023719e95f295408dd9f18d}{m\_\-shaderName}
+\begin{DoxyCompactList}\small\item\em shader for spheres \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classParticle_acf7bf74338658f448da9bf323b748bb4}{m\_\-pressureForce}
+\item 
+ngl::Vec3 \hyperlink{classParticle_a40a8a467bfd99235cef6e1685a509869}{m\_\-viscosityForce}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParticle_ac6f39cecbf6d1995e2167dacbc0ca5ae}{
+\index{Particle@{Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Particle@{Particle}}
+\subsubsection[{Particle}]{\setlength{\rightskip}{0pt plus 5cm}Particle::Particle (int {\em \_\-idx}, \/  ngl::Vec3 {\em \_\-pos}, \/  float {\em \_\-simScale}, \/  const {\bf FluidParams} \& {\em \_\-params}, \/  const std::string \& {\em \_\-shadername})}}
+\label{classParticle_ac6f39cecbf6d1995e2167dacbc0ca5ae}
+
+
+default constructor 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-idx}]index \item[{\em \_\-pos}]position \item[{\em \_\-simScale}]simulation scale \item[{\em \_\-params}]fluid parameters \item[{\em \_\-shadername}]shader to render fluid with \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classParticle_a65eba0070673cb425a23a8a8496f6a17}{
+\index{Particle@{Particle}!getOldPos@{getOldPos}}
+\index{getOldPos@{getOldPos}!Particle@{Particle}}
+\subsubsection[{getOldPos}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 Particle::getOldPos () const}}
+\label{classParticle_a65eba0070673cb425a23a8a8496f6a17}
+
+
+get the previousposition \hypertarget{classParticle_a3c5efd4bc52c177c06439fc9eafe3438}{
+\index{Particle@{Particle}!getPos@{getPos}}
+\index{getPos@{getPos}!Particle@{Particle}}
+\subsubsection[{getPos}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 Particle::getPos () const}}
+\label{classParticle_a3c5efd4bc52c177c06439fc9eafe3438}
+
+
+get the position \hypertarget{classParticle_a3d46d63eefd8b6af8185907d545a973d}{
+\index{Particle@{Particle}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!Particle@{Particle}}
+\subsubsection[{getVelocity}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 Particle::getVelocity () const}}
+\label{classParticle_a3d46d63eefd8b6af8185907d545a973d}
+
+
+get the velocity at time t \hypertarget{classParticle_aaaecbd96e5c316275c3d208a45fc6c14}{
+\index{Particle@{Particle}!setCollisionVelocity@{setCollisionVelocity}}
+\index{setCollisionVelocity@{setCollisionVelocity}!Particle@{Particle}}
+\subsubsection[{setCollisionVelocity}]{\setlength{\rightskip}{0pt plus 5cm}void Particle::setCollisionVelocity (const ngl::Vec3 \& {\em \_\-velocity})}}
+\label{classParticle_aaaecbd96e5c316275c3d208a45fc6c14}
+
+
+allows the bounding box to update velocities at time t and t+0.5dt 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-velocity}]new velocity \end{DoxyParams}
+\hypertarget{classParticle_ab78251d2269e22e833f9b7dfb45e832d}{
+\index{Particle@{Particle}!setPos@{setPos}}
+\index{setPos@{setPos}!Particle@{Particle}}
+\subsubsection[{setPos}]{\setlength{\rightskip}{0pt plus 5cm}void Particle::setPos (const ngl::Vec3 \& {\em \_\-pos})}}
+\label{classParticle_ab78251d2269e22e833f9b7dfb45e832d}
+
+
+set the current position 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-pos}]new position to set \end{DoxyParams}
+\hypertarget{classParticle_a5035778e0aa62ed6bc2d7f0ae45f723b}{
+\index{Particle@{Particle}!updateColour@{updateColour}}
+\index{updateColour@{updateColour}!Particle@{Particle}}
+\subsubsection[{updateColour}]{\setlength{\rightskip}{0pt plus 5cm}void Particle::updateColour (const {\bf DrawMode} {\em \_\-mode})}}
+\label{classParticle_a5035778e0aa62ed6bc2d7f0ae45f723b}
+
+
+sets the colour of the particle 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-mode}]drawing mode of particle \end{DoxyParams}
+\hypertarget{classParticle_a50dd1d5f58c0147fa3eba021adaf2752}{
+\index{Particle@{Particle}!updateNeighbors@{updateNeighbors}}
+\index{updateNeighbors@{updateNeighbors}!Particle@{Particle}}
+\subsubsection[{updateNeighbors}]{\setlength{\rightskip}{0pt plus 5cm}void Particle::updateNeighbors (const std::vector$<$ {\bf Particle} $\ast$ $>$ \& {\em \_\-neighbors})}}
+\label{classParticle_a50dd1d5f58c0147fa3eba021adaf2752}
+
+
+save the list of new neighbors 
+\begin{DoxyParams}{Parameters}
+\item[{\em \_\-neighbors}]new neighbour list \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classParticle_ab98ecf309cee41177c34fbd64f3f33a9}{
+\index{Particle@{Particle}!m\_\-acceleration@{m\_\-acceleration}}
+\index{m\_\-acceleration@{m\_\-acceleration}!Particle@{Particle}}
+\subsubsection[{m\_\-acceleration}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-acceleration}}}
+\label{classParticle_ab98ecf309cee41177c34fbd64f3f33a9}
+
+
+particle acceleration \hypertarget{classParticle_a6095555452db7271e32380a188e1004e}{
+\index{Particle@{Particle}!m\_\-colour@{m\_\-colour}}
+\index{m\_\-colour@{m\_\-colour}!Particle@{Particle}}
+\subsubsection[{m\_\-colour}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Colour {\bf Particle::m\_\-colour}}}
+\label{classParticle_a6095555452db7271e32380a188e1004e}
+
+
+particle colour \hypertarget{classParticle_a7ef5758b3dbc3ea263b670012f0c2fe5}{
+\index{Particle@{Particle}!m\_\-density@{m\_\-density}}
+\index{m\_\-density@{m\_\-density}!Particle@{Particle}}
+\subsubsection[{m\_\-density}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Particle::m\_\-density}}}
+\label{classParticle_a7ef5758b3dbc3ea263b670012f0c2fe5}
+
+
+particle density in kg/m$^\wedge$3 \hypertarget{classParticle_aa30f0a6fac4bee02f1082a2ebb04e7a5}{
+\index{Particle@{Particle}!m\_\-externalForce@{m\_\-externalForce}}
+\index{m\_\-externalForce@{m\_\-externalForce}!Particle@{Particle}}
+\subsubsection[{m\_\-externalForce}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-externalForce}}}
+\label{classParticle_aa30f0a6fac4bee02f1082a2ebb04e7a5}
+
+
+external force on the particle \hypertarget{classParticle_a24c5edf015f4c3d067acf1a054f31f93}{
+\index{Particle@{Particle}!m\_\-id@{m\_\-id}}
+\index{m\_\-id@{m\_\-id}!Particle@{Particle}}
+\subsubsection[{m\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Particle::m\_\-id}}}
+\label{classParticle_a24c5edf015f4c3d067acf1a054f31f93}
+
+
+unique \hyperlink{classParticle}{Particle} ID \hypertarget{classParticle_ac4da3c37729ac9ed06664618d2a32f25}{
+\index{Particle@{Particle}!m\_\-internalForce@{m\_\-internalForce}}
+\index{m\_\-internalForce@{m\_\-internalForce}!Particle@{Particle}}
+\subsubsection[{m\_\-internalForce}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-internalForce}}}
+\label{classParticle_ac4da3c37729ac9ed06664618d2a32f25}
+
+
+internal force on the particle \hypertarget{classParticle_ab78b76aeb4d163132a0c27ea4c5beb75}{
+\index{Particle@{Particle}!m\_\-mass@{m\_\-mass}}
+\index{m\_\-mass@{m\_\-mass}!Particle@{Particle}}
+\subsubsection[{m\_\-mass}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Particle::m\_\-mass}}}
+\label{classParticle_ab78b76aeb4d163132a0c27ea4c5beb75}
+
+
+particle's mass in kg \hypertarget{classParticle_a250b194672f141d8439af838422f4efb}{
+\index{Particle@{Particle}!m\_\-neighbors@{m\_\-neighbors}}
+\index{m\_\-neighbors@{m\_\-neighbors}!Particle@{Particle}}
+\subsubsection[{m\_\-neighbors}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf Particle}$\ast$$>$ {\bf Particle::m\_\-neighbors}}}
+\label{classParticle_a250b194672f141d8439af838422f4efb}
+
+
+list of neighbours to smooth over \hypertarget{classParticle_ad27e14ae4bd99b1975413f6881d8aea1}{
+\index{Particle@{Particle}!m\_\-nextVelocity@{m\_\-nextVelocity}}
+\index{m\_\-nextVelocity@{m\_\-nextVelocity}!Particle@{Particle}}
+\subsubsection[{m\_\-nextVelocity}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-nextVelocity}}}
+\label{classParticle_ad27e14ae4bd99b1975413f6881d8aea1}
+
+
+particle velocity at time t+1/2(delta\_\-t) \hypertarget{classParticle_a4dcb620999acae9e32fa55ad39250c57}{
+\index{Particle@{Particle}!m\_\-oldpos@{m\_\-oldpos}}
+\index{m\_\-oldpos@{m\_\-oldpos}!Particle@{Particle}}
+\subsubsection[{m\_\-oldpos}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-oldpos}}}
+\label{classParticle_a4dcb620999acae9e32fa55ad39250c57}
+
+
+old position for grid \hypertarget{classParticle_a2b5ef8d7207002ec8e887492a5bbe9f2}{
+\index{Particle@{Particle}!m\_\-pos@{m\_\-pos}}
+\index{m\_\-pos@{m\_\-pos}!Particle@{Particle}}
+\subsubsection[{m\_\-pos}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-pos}}}
+\label{classParticle_a2b5ef8d7207002ec8e887492a5bbe9f2}
+
+
+particle position \hypertarget{classParticle_a5c0abc7791d1fbfd584e38d509b6088e}{
+\index{Particle@{Particle}!m\_\-pressure@{m\_\-pressure}}
+\index{m\_\-pressure@{m\_\-pressure}!Particle@{Particle}}
+\subsubsection[{m\_\-pressure}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Particle::m\_\-pressure}}}
+\label{classParticle_a5c0abc7791d1fbfd584e38d509b6088e}
+
+
+particle's pressure in kg/(m$\ast$s$^\wedge$2) \hypertarget{classParticle_acf7bf74338658f448da9bf323b748bb4}{
+\index{Particle@{Particle}!m\_\-pressureForce@{m\_\-pressureForce}}
+\index{m\_\-pressureForce@{m\_\-pressureForce}!Particle@{Particle}}
+\subsubsection[{m\_\-pressureForce}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-pressureForce}}}
+\label{classParticle_acf7bf74338658f448da9bf323b748bb4}
+\hypertarget{classParticle_ac1b3d740751addafa14c3533a155277a}{
+\index{Particle@{Particle}!m\_\-prevVelocity@{m\_\-prevVelocity}}
+\index{m\_\-prevVelocity@{m\_\-prevVelocity}!Particle@{Particle}}
+\subsubsection[{m\_\-prevVelocity}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-prevVelocity}}}
+\label{classParticle_ac1b3d740751addafa14c3533a155277a}
+
+
+particle velocity at time t-\/1/2(delta\_\-t) \hypertarget{classParticle_a034612e9cd54961ae18980e9f36d2d93}{
+\index{Particle@{Particle}!m\_\-restDensity@{m\_\-restDensity}}
+\index{m\_\-restDensity@{m\_\-restDensity}!Particle@{Particle}}
+\subsubsection[{m\_\-restDensity}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Particle::m\_\-restDensity}}}
+\label{classParticle_a034612e9cd54961ae18980e9f36d2d93}
+
+
+rest density \hypertarget{classParticle_aa307c489c26622823817ce2083ac37a1}{
+\index{Particle@{Particle}!m\_\-restDensity2@{m\_\-restDensity2}}
+\index{m\_\-restDensity2@{m\_\-restDensity2}!Particle@{Particle}}
+\subsubsection[{m\_\-restDensity2}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Particle::m\_\-restDensity2}}}
+\label{classParticle_aa307c489c26622823817ce2083ac37a1}
+
+
+2x rest density for drawing \hypertarget{classParticle_a621671d7f023719e95f295408dd9f18d}{
+\index{Particle@{Particle}!m\_\-shaderName@{m\_\-shaderName}}
+\index{m\_\-shaderName@{m\_\-shaderName}!Particle@{Particle}}
+\subsubsection[{m\_\-shaderName}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Particle::m\_\-shaderName}}}
+\label{classParticle_a621671d7f023719e95f295408dd9f18d}
+
+
+shader for spheres \hypertarget{classParticle_a5f9a1515ebe899af685c77d4f119ab45}{
+\index{Particle@{Particle}!m\_\-simScale@{m\_\-simScale}}
+\index{m\_\-simScale@{m\_\-simScale}!Particle@{Particle}}
+\subsubsection[{m\_\-simScale}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Particle::m\_\-simScale}}}
+\label{classParticle_a5f9a1515ebe899af685c77d4f119ab45}
+
+
+simulation scale \hypertarget{classParticle_acf841a001a93c2c613b13402e3947c16}{
+\index{Particle@{Particle}!m\_\-size@{m\_\-size}}
+\index{m\_\-size@{m\_\-size}!Particle@{Particle}}
+\subsubsection[{m\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Particle::m\_\-size}}}
+\label{classParticle_acf841a001a93c2c613b13402e3947c16}
+
+
+particle size \hypertarget{classParticle_a3c6edff3c6a05d7eaac8eeb261bc0383}{
+\index{Particle@{Particle}!m\_\-velocity@{m\_\-velocity}}
+\index{m\_\-velocity@{m\_\-velocity}!Particle@{Particle}}
+\subsubsection[{m\_\-velocity}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-velocity}}}
+\label{classParticle_a3c6edff3c6a05d7eaac8eeb261bc0383}
+
+
+particle velocity in m/s \hypertarget{classParticle_a40a8a467bfd99235cef6e1685a509869}{
+\index{Particle@{Particle}!m\_\-viscosityForce@{m\_\-viscosityForce}}
+\index{m\_\-viscosityForce@{m\_\-viscosityForce}!Particle@{Particle}}
+\subsubsection[{m\_\-viscosityForce}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Particle::m\_\-viscosityForce}}}
+\label{classParticle_a40a8a467bfd99235cef6e1685a509869}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Particle_8h}{Particle.h}\item 
+src/\hyperlink{Particle_8cpp}{Particle.cpp}\end{DoxyCompactItemize}

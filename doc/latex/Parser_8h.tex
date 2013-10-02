@@ -1,0 +1,176 @@
+\hypertarget{Parser_8h}{
+\section{include/Parser.h File Reference}
+\label{Parser_8h}\index{include/Parser.h@{include/Parser.h}}
+}
+
+
+Class to read in a config file and store parameters.  
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include $<$fstream$>$}\par
+{\ttfamily \#include $<$cstdlib$>$}\par
+{\ttfamily \#include $<$string$>$}\par
+{\ttfamily \#include $<$boost/tokenizer.hpp$>$}\par
+{\ttfamily \#include $<$boost/lexical\_\-cast.hpp$>$}\par
+{\ttfamily \#include $<$boost/format.hpp$>$}\par
+{\ttfamily \#include $<$ngl/Vec3.h$>$}\par
+{\ttfamily \#include \char`\"{}Common.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classParser}{Parser}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{Parser_8h_a8b3b3c275eb46680d92090efb407c5df}{boost::tokenizer}$<$ boost::char\_\-separator$<$ char $>$ $>$ \hyperlink{Parser_8h_a8b3b3c275eb46680d92090efb407c5df}{tokenizer}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{Parser_8h_acd61ff6e24d5b4cf7b2c7da07eb7975e}{c\_\-defaultNumParticles} = 200
+\begin{DoxyCompactList}\small\item\em Default number of particles. \item\end{DoxyCompactList}\item 
+const ngl::Vec3 \hyperlink{Parser_8h_a5f71d16884c0c9c55e0b811518f96982}{c\_\-defaultContainerDimensions} = ngl::Vec3(1,1,1)
+\begin{DoxyCompactList}\small\item\em Default container size. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_a334346580180131bfb856aa87fa0d576}{c\_\-defaultSimScale} = 0.1
+\begin{DoxyCompactList}\small\item\em Default simulation scale. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_a90bb60176133acde433c4e5fa8835f4c}{c\_\-defaultTimeStep} = 0.01
+\begin{DoxyCompactList}\small\item\em Default time step. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_aa5b2a863f931770122f5ecbf1f9e4658}{c\_\-defaultSmoothRadius} = 0.08
+\begin{DoxyCompactList}\small\item\em Default smoothing radius. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_a5b7d96b2e2292f45adc7fbf7931be64e}{c\_\-defaultElasticity} = 0.2
+\begin{DoxyCompactList}\small\item\em Default elasticity. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_abc35d11d0edb1409060d675191d6552c}{c\_\-defaultRestDensity} = 60
+\begin{DoxyCompactList}\small\item\em Default rest density. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_aa95081b27befee5ead043b4d12b0389f}{c\_\-defaultMass} = 0.02
+\begin{DoxyCompactList}\small\item\em Default particle mass. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_a8db7daf89dd5a3da07550a354e9231fa}{c\_\-defaultViscosity} = 3.5
+\begin{DoxyCompactList}\small\item\em Default viscosity. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_ae235dd89149cd0eedf5f08482c9bdaef}{c\_\-defaultGasK} = 3.0
+\begin{DoxyCompactList}\small\item\em Default stiffness. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_aa5aebf7654206fc8aff73f0b93d1c976}{c\_\-defaultThreshold} = 7.065
+\begin{DoxyCompactList}\small\item\em Default threshold for surface tension. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_aae8fccf410daca56b53b133f543284cd}{c\_\-defaultTension} = 0.0728
+\begin{DoxyCompactList}\small\item\em Default surface tension. \item\end{DoxyCompactList}\item 
+const float \hyperlink{Parser_8h_ad1710842b4e2902c1b13bd11654f69cf}{c\_\-defaultSize} = 0.005
+\begin{DoxyCompactList}\small\item\em Default particle size. \item\end{DoxyCompactList}\item 
+const ngl::Vec3 \hyperlink{Parser_8h_a5ed90119bc74c32b235d20697a9a16a0}{c\_\-defaultGravity} = ngl::Vec3(0,-\/9.8,0)
+\begin{DoxyCompactList}\small\item\em Default gravity acceleration. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to read in a config file and store parameters. \begin{DoxyAuthor}{Author}
+Julia Lou 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/03/2013 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{Parser_8h_a8b3b3c275eb46680d92090efb407c5df}{
+\index{Parser.h@{Parser.h}!tokenizer@{tokenizer}}
+\index{tokenizer@{tokenizer}!Parser.h@{Parser.h}}
+\subsubsection[{tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf boost::tokenizer}$<$boost::char\_\-separator$<$char$>$ $>$ {\bf tokenizer}}}
+\label{Parser_8h_a8b3b3c275eb46680d92090efb407c5df}
+
+
+\subsection{Variable Documentation}
+\hypertarget{Parser_8h_a5f71d16884c0c9c55e0b811518f96982}{
+\index{Parser.h@{Parser.h}!c\_\-defaultContainerDimensions@{c\_\-defaultContainerDimensions}}
+\index{c\_\-defaultContainerDimensions@{c\_\-defaultContainerDimensions}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultContainerDimensions}]{\setlength{\rightskip}{0pt plus 5cm}const ngl::Vec3 {\bf c\_\-defaultContainerDimensions} = ngl::Vec3(1,1,1)}}
+\label{Parser_8h_a5f71d16884c0c9c55e0b811518f96982}
+
+
+Default container size. \hypertarget{Parser_8h_a5b7d96b2e2292f45adc7fbf7931be64e}{
+\index{Parser.h@{Parser.h}!c\_\-defaultElasticity@{c\_\-defaultElasticity}}
+\index{c\_\-defaultElasticity@{c\_\-defaultElasticity}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultElasticity}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultElasticity} = 0.2}}
+\label{Parser_8h_a5b7d96b2e2292f45adc7fbf7931be64e}
+
+
+Default elasticity. \hypertarget{Parser_8h_ae235dd89149cd0eedf5f08482c9bdaef}{
+\index{Parser.h@{Parser.h}!c\_\-defaultGasK@{c\_\-defaultGasK}}
+\index{c\_\-defaultGasK@{c\_\-defaultGasK}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultGasK}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultGasK} = 3.0}}
+\label{Parser_8h_ae235dd89149cd0eedf5f08482c9bdaef}
+
+
+Default stiffness. \hypertarget{Parser_8h_a5ed90119bc74c32b235d20697a9a16a0}{
+\index{Parser.h@{Parser.h}!c\_\-defaultGravity@{c\_\-defaultGravity}}
+\index{c\_\-defaultGravity@{c\_\-defaultGravity}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultGravity}]{\setlength{\rightskip}{0pt plus 5cm}const ngl::Vec3 {\bf c\_\-defaultGravity} = ngl::Vec3(0,-\/9.8,0)}}
+\label{Parser_8h_a5ed90119bc74c32b235d20697a9a16a0}
+
+
+Default gravity acceleration. \hypertarget{Parser_8h_aa95081b27befee5ead043b4d12b0389f}{
+\index{Parser.h@{Parser.h}!c\_\-defaultMass@{c\_\-defaultMass}}
+\index{c\_\-defaultMass@{c\_\-defaultMass}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultMass}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultMass} = 0.02}}
+\label{Parser_8h_aa95081b27befee5ead043b4d12b0389f}
+
+
+Default particle mass. \hypertarget{Parser_8h_acd61ff6e24d5b4cf7b2c7da07eb7975e}{
+\index{Parser.h@{Parser.h}!c\_\-defaultNumParticles@{c\_\-defaultNumParticles}}
+\index{c\_\-defaultNumParticles@{c\_\-defaultNumParticles}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultNumParticles}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf c\_\-defaultNumParticles} = 200}}
+\label{Parser_8h_acd61ff6e24d5b4cf7b2c7da07eb7975e}
+
+
+Default number of particles. \hypertarget{Parser_8h_abc35d11d0edb1409060d675191d6552c}{
+\index{Parser.h@{Parser.h}!c\_\-defaultRestDensity@{c\_\-defaultRestDensity}}
+\index{c\_\-defaultRestDensity@{c\_\-defaultRestDensity}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultRestDensity}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultRestDensity} = 60}}
+\label{Parser_8h_abc35d11d0edb1409060d675191d6552c}
+
+
+Default rest density. \hypertarget{Parser_8h_a334346580180131bfb856aa87fa0d576}{
+\index{Parser.h@{Parser.h}!c\_\-defaultSimScale@{c\_\-defaultSimScale}}
+\index{c\_\-defaultSimScale@{c\_\-defaultSimScale}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultSimScale}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultSimScale} = 0.1}}
+\label{Parser_8h_a334346580180131bfb856aa87fa0d576}
+
+
+Default simulation scale. \hypertarget{Parser_8h_ad1710842b4e2902c1b13bd11654f69cf}{
+\index{Parser.h@{Parser.h}!c\_\-defaultSize@{c\_\-defaultSize}}
+\index{c\_\-defaultSize@{c\_\-defaultSize}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultSize}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultSize} = 0.005}}
+\label{Parser_8h_ad1710842b4e2902c1b13bd11654f69cf}
+
+
+Default particle size. \hypertarget{Parser_8h_aa5b2a863f931770122f5ecbf1f9e4658}{
+\index{Parser.h@{Parser.h}!c\_\-defaultSmoothRadius@{c\_\-defaultSmoothRadius}}
+\index{c\_\-defaultSmoothRadius@{c\_\-defaultSmoothRadius}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultSmoothRadius}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultSmoothRadius} = 0.08}}
+\label{Parser_8h_aa5b2a863f931770122f5ecbf1f9e4658}
+
+
+Default smoothing radius. \hypertarget{Parser_8h_aae8fccf410daca56b53b133f543284cd}{
+\index{Parser.h@{Parser.h}!c\_\-defaultTension@{c\_\-defaultTension}}
+\index{c\_\-defaultTension@{c\_\-defaultTension}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultTension}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultTension} = 0.0728}}
+\label{Parser_8h_aae8fccf410daca56b53b133f543284cd}
+
+
+Default surface tension. \hypertarget{Parser_8h_aa5aebf7654206fc8aff73f0b93d1c976}{
+\index{Parser.h@{Parser.h}!c\_\-defaultThreshold@{c\_\-defaultThreshold}}
+\index{c\_\-defaultThreshold@{c\_\-defaultThreshold}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultThreshold}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultThreshold} = 7.065}}
+\label{Parser_8h_aa5aebf7654206fc8aff73f0b93d1c976}
+
+
+Default threshold for surface tension. \hypertarget{Parser_8h_a90bb60176133acde433c4e5fa8835f4c}{
+\index{Parser.h@{Parser.h}!c\_\-defaultTimeStep@{c\_\-defaultTimeStep}}
+\index{c\_\-defaultTimeStep@{c\_\-defaultTimeStep}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultTimeStep}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultTimeStep} = 0.01}}
+\label{Parser_8h_a90bb60176133acde433c4e5fa8835f4c}
+
+
+Default time step. \hypertarget{Parser_8h_a8db7daf89dd5a3da07550a354e9231fa}{
+\index{Parser.h@{Parser.h}!c\_\-defaultViscosity@{c\_\-defaultViscosity}}
+\index{c\_\-defaultViscosity@{c\_\-defaultViscosity}!Parser.h@{Parser.h}}
+\subsubsection[{c\_\-defaultViscosity}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf c\_\-defaultViscosity} = 3.5}}
+\label{Parser_8h_a8db7daf89dd5a3da07550a354e9231fa}
+
+
+Default viscosity. 

@@ -1,0 +1,84 @@
+\hypertarget{classGrid}{
+\section{Grid Class Reference}
+\label{classGrid}\index{Grid@{Grid}}
+}
+
+
+{\ttfamily \#include $<$Grid.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGrid_a4ac9ff4f63552b4c61ff90fcb35ad66c}{Grid} ()
+\begin{DoxyCompactList}\small\item\em default constructor \item\end{DoxyCompactList}\item 
+\hyperlink{classGrid_ab1c364659f2e78f3066a27595f146117}{Grid} (const float \_\-bbx, const float \_\-bby, const float \_\-bbz, std::vector$<$ \hyperlink{classParticle}{Particle} $>$ \&\_\-pvector, const float \_\-radius, const float \_\-simScale)
+\begin{DoxyCompactList}\small\item\em constructor creates a grid defined by the bounding box dimensions \item\end{DoxyCompactList}\item 
+\hyperlink{classGrid_a3661d0a7f998caaaf8627d7a67072116}{$\sim$Grid} ()
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a4f593e269e61cdbb9d3057269120e432}{getNeighbors} (const \hyperlink{classParticle}{Particle} \&\_\-pstart, std::vector$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&o\_\-retVec)
+\begin{DoxyCompactList}\small\item\em return vector of neighbours in the cell \item\end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a1e904362638c9c3f83f6a14fe553f868}{getNeighbors} (const \hyperlink{classParticle}{Particle} \&\_\-pstart, std::vector$<$ int $>$ \&o\_\-retVec)
+\begin{DoxyCompactList}\small\item\em return vector of indices of neighbours \item\end{DoxyCompactList}\item 
+void \hyperlink{classGrid_a2e82b95aada21472f5ffb9a4cd9d8ca6}{updatePCell} (\hyperlink{classParticle}{Particle} $\ast$\_\-particle)
+\begin{DoxyCompactList}\small\item\em update the cell a particle belongs to \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGrid_a4ac9ff4f63552b4c61ff90fcb35ad66c}{
+\index{Grid@{Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid@{Grid}}
+\subsubsection[{Grid}]{\setlength{\rightskip}{0pt plus 5cm}Grid::Grid ()}}
+\label{classGrid_a4ac9ff4f63552b4c61ff90fcb35ad66c}
+
+
+default constructor \hypertarget{classGrid_ab1c364659f2e78f3066a27595f146117}{
+\index{Grid@{Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid@{Grid}}
+\subsubsection[{Grid}]{\setlength{\rightskip}{0pt plus 5cm}Grid::Grid (const float {\em \_\-bbx}, \/  const float {\em \_\-bby}, \/  const float {\em \_\-bbz}, \/  std::vector$<$ {\bf Particle} $>$ \& {\em \_\-pvector}, \/  const float {\em \_\-radius}, \/  const float {\em \_\-simScale})}}
+\label{classGrid_ab1c364659f2e78f3066a27595f146117}
+
+
+constructor creates a grid defined by the bounding box dimensions 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-bbx}]bounding box size x \item[\mbox{$\leftarrow$} {\em \_\-bby}]bounding box size y \item[\mbox{$\leftarrow$} {\em \_\-bbz}]bounding box size z \item[\mbox{$\leftarrow$} {\em \_\-plist}]particle container \item[\mbox{$\leftarrow$} {\em \_\-radius}]smoothing radius \item[\mbox{$\leftarrow$} {\em \_\-simScale}]simulation scale \end{DoxyParams}
+\hypertarget{classGrid_a3661d0a7f998caaaf8627d7a67072116}{
+\index{Grid@{Grid}!$\sim$Grid@{$\sim$Grid}}
+\index{$\sim$Grid@{$\sim$Grid}!Grid@{Grid}}
+\subsubsection[{$\sim$Grid}]{\setlength{\rightskip}{0pt plus 5cm}Grid::$\sim$Grid ()}}
+\label{classGrid_a3661d0a7f998caaaf8627d7a67072116}
+
+
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGrid_a1e904362638c9c3f83f6a14fe553f868}{
+\index{Grid@{Grid}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!Grid@{Grid}}
+\subsubsection[{getNeighbors}]{\setlength{\rightskip}{0pt plus 5cm}void Grid::getNeighbors (const {\bf Particle} \& {\em \_\-pstart}, \/  std::vector$<$ int $>$ \& {\em o\_\-retVec})}}
+\label{classGrid_a1e904362638c9c3f83f6a14fe553f868}
+
+
+return vector of indices of neighbours \hypertarget{classGrid_a4f593e269e61cdbb9d3057269120e432}{
+\index{Grid@{Grid}!getNeighbors@{getNeighbors}}
+\index{getNeighbors@{getNeighbors}!Grid@{Grid}}
+\subsubsection[{getNeighbors}]{\setlength{\rightskip}{0pt plus 5cm}void Grid::getNeighbors (const {\bf Particle} \& {\em \_\-pstart}, \/  std::vector$<$ {\bf Particle} $\ast$ $>$ \& {\em o\_\-retVec})}}
+\label{classGrid_a4f593e269e61cdbb9d3057269120e432}
+
+
+return vector of neighbours in the cell 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-pstart}]\hyperlink{classParticle}{Particle} to get neighbours of \item[\mbox{$\rightarrow$} {\em o\_\-retVec}]vector filled in with neighbours \end{DoxyParams}
+\hypertarget{classGrid_a2e82b95aada21472f5ffb9a4cd9d8ca6}{
+\index{Grid@{Grid}!updatePCell@{updatePCell}}
+\index{updatePCell@{updatePCell}!Grid@{Grid}}
+\subsubsection[{updatePCell}]{\setlength{\rightskip}{0pt plus 5cm}void Grid::updatePCell ({\bf Particle} $\ast$ {\em \_\-particle})}}
+\label{classGrid_a2e82b95aada21472f5ffb9a4cd9d8ca6}
+
+
+update the cell a particle belongs to 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em pointer}]to particle to update \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Grid_8h}{Grid.h}\item 
+src/\hyperlink{Grid_8cpp}{Grid.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{classParser}{
+\section{Parser Class Reference}
+\label{classParser}\index{Parser@{Parser}}
+}
+
+
+{\ttfamily \#include $<$Parser.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParser_a12234f6cd36b61af4b50c94a179422c1}{Parser} ()
+\begin{DoxyCompactList}\small\item\em default constructor shouldn't do anything \item\end{DoxyCompactList}\item 
+\hyperlink{classParser_a2cc8ece9a9d047e1511ac7492d9bc4d2}{Parser} (const \hyperlink{classParser}{Parser} \&\_\-parser)
+\begin{DoxyCompactList}\small\item\em copy constructor \item\end{DoxyCompactList}\item 
+\hyperlink{classParser_aa5750b02ac1bd78623e6bb0b9d2c0f4e}{Parser} (const std::string filename)
+\begin{DoxyCompactList}\small\item\em constructor takes a file and parses it, storing the read parameters in the structs \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structFluidParams}{FluidParams} \hyperlink{classParser_afa0c063fcebcccbbf37a15b034954d1b}{m\_\-fluidSettings}
+\begin{DoxyCompactList}\small\item\em store parsed parameters for the fluid system \item\end{DoxyCompactList}\item 
+struct \hyperlink{structSimulationParams}{SimulationParams} \hyperlink{classParser_acf49fee1776c3a865fd38487e7680f6f}{m\_\-simSettings}
+\begin{DoxyCompactList}\small\item\em store parsed parameters for the simulation \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParser_a12234f6cd36b61af4b50c94a179422c1}{
+\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser::Parser ()}}
+\label{classParser_a12234f6cd36b61af4b50c94a179422c1}
+
+
+default constructor shouldn't do anything \hypertarget{classParser_a2cc8ece9a9d047e1511ac7492d9bc4d2}{
+\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser::Parser (const {\bf Parser} \& {\em \_\-parser})}}
+\label{classParser_a2cc8ece9a9d047e1511ac7492d9bc4d2}
+
+
+copy constructor \hypertarget{classParser_aa5750b02ac1bd78623e6bb0b9d2c0f4e}{
+\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser::Parser (const std::string {\em filename})}}
+\label{classParser_aa5750b02ac1bd78623e6bb0b9d2c0f4e}
+
+
+constructor takes a file and parses it, storing the read parameters in the structs 
+
+\subsection{Member Data Documentation}
+\hypertarget{classParser_afa0c063fcebcccbbf37a15b034954d1b}{
+\index{Parser@{Parser}!m\_\-fluidSettings@{m\_\-fluidSettings}}
+\index{m\_\-fluidSettings@{m\_\-fluidSettings}!Parser@{Parser}}
+\subsubsection[{m\_\-fluidSettings}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf FluidParams} {\bf Parser::m\_\-fluidSettings}\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}
+\label{classParser_afa0c063fcebcccbbf37a15b034954d1b}
+
+
+store parsed parameters for the fluid system \hypertarget{classParser_acf49fee1776c3a865fd38487e7680f6f}{
+\index{Parser@{Parser}!m\_\-simSettings@{m\_\-simSettings}}
+\index{m\_\-simSettings@{m\_\-simSettings}!Parser@{Parser}}
+\subsubsection[{m\_\-simSettings}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf SimulationParams} {\bf Parser::m\_\-simSettings}\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}
+\label{classParser_acf49fee1776c3a865fd38487e7680f6f}
+
+
+store parsed parameters for the simulation 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Parser_8h}{Parser.h}\item 
+src/\hyperlink{Parser_8cpp}{Parser.cpp}\end{DoxyCompactItemize}

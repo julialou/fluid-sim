@@ -1,0 +1,143 @@
+\hypertarget{classObstacle}{
+\section{Obstacle Class Reference}
+\label{classObstacle}\index{Obstacle@{Obstacle}}
+}
+
+
+{\ttfamily \#include $<$Obstacle.h$>$}Inheritance diagram for Obstacle::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classObstacle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObstacle_aa896fb4d70044e9421ccb9c757ed2d3c}{Obstacle} (const ngl::Vec3 \&\_\-pos, const ngl::Colour \&\_\-colour, const ngl::Vec3 \&\_\-size, const std::string \&\_\-shaderName, const struct \hyperlink{structSimulationParams}{SimulationParams} \&\_\-params, \hyperlink{classFluidSystem}{FluidSystem} $\ast$\_\-parent)
+\item 
+virtual \hyperlink{classObstacle_af2f9cc9c6cff75dca0974fd5ac4f71a9}{$\sim$Obstacle} ()
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classObstacle_a7476b22bcd25e3731a0ef2aa5324afa0}{draw} () const =0
+\begin{DoxyCompactList}\small\item\em draw the obstacle \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classObstacle_ae35a1937df593d5caf25c5545acbaffd}{checkCollision} (\hyperlink{classParticle}{Particle} \&\_\-particle)=0
+\begin{DoxyCompactList}\small\item\em collide with a particle \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ngl::Vec3 \hyperlink{classObstacle_a7e390fb6bbe3b281e56c192138c19a27}{m\_\-pos}
+\begin{DoxyCompactList}\small\item\em center position of the obstacle \item\end{DoxyCompactList}\item 
+ngl::Colour \hyperlink{classObstacle_a0f812616869fc67cc7cb147f0e3524ef}{m\_\-colour}
+\begin{DoxyCompactList}\small\item\em colour \item\end{DoxyCompactList}\item 
+float \hyperlink{classObstacle_ae8815e4278c8e141c38e306e89439c57}{m\_\-simScale}
+\begin{DoxyCompactList}\small\item\em simulation scale \item\end{DoxyCompactList}\item 
+float \hyperlink{classObstacle_a60e24ee62597021b70f05e61b427132e}{m\_\-elasticity}
+\begin{DoxyCompactList}\small\item\em elasticity \item\end{DoxyCompactList}\item 
+ngl::Vec3 \hyperlink{classObstacle_a936746fd9203f709367d170255e5ad63}{m\_\-size}
+\begin{DoxyCompactList}\small\item\em dimensions of the obstacle \item\end{DoxyCompactList}\item 
+float \hyperlink{classObstacle_a00b57b81521105150839ba7b3846e95b}{m\_\-timestep}
+\begin{DoxyCompactList}\small\item\em time step \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classObstacle_a83d931c2569ec99d17a483d7b88b2cdf}{m\_\-shaderName}
+\begin{DoxyCompactList}\small\item\em shader name \item\end{DoxyCompactList}\item 
+\hyperlink{classFluidSystem}{FluidSystem} $\ast$ \hyperlink{classObstacle_aaaeea9917fde7abb8fa8ca2ac73e51cb}{m\_\-parent}
+\begin{DoxyCompactList}\small\item\em the parenting fluid system \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObstacle_aa896fb4d70044e9421ccb9c757ed2d3c}{
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\subsubsection[{Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}Obstacle::Obstacle (const ngl::Vec3 \& {\em \_\-pos}, \/  const ngl::Colour \& {\em \_\-colour}, \/  const ngl::Vec3 \& {\em \_\-size}, \/  const std::string \& {\em \_\-shaderName}, \/  const struct {\bf SimulationParams} \& {\em \_\-params}, \/  {\bf FluidSystem} $\ast$ {\em \_\-parent})}}
+\label{classObstacle_aa896fb4d70044e9421ccb9c757ed2d3c}
+\hypertarget{classObstacle_af2f9cc9c6cff75dca0974fd5ac4f71a9}{
+\index{Obstacle@{Obstacle}!$\sim$Obstacle@{$\sim$Obstacle}}
+\index{$\sim$Obstacle@{$\sim$Obstacle}!Obstacle@{Obstacle}}
+\subsubsection[{$\sim$Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}Obstacle::$\sim$Obstacle ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classObstacle_af2f9cc9c6cff75dca0974fd5ac4f71a9}
+
+
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classObstacle_ae35a1937df593d5caf25c5545acbaffd}{
+\index{Obstacle@{Obstacle}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Obstacle@{Obstacle}}
+\subsubsection[{checkCollision}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obstacle::checkCollision ({\bf Particle} \& {\em \_\-particle})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classObstacle_ae35a1937df593d5caf25c5545acbaffd}
+
+
+collide with a particle 
+
+Implemented in \hyperlink{classCube_a6e53f829d8ebcbd53ea462e53d07f64f}{Cube}, and \hyperlink{classSphere_a0a18ee7f656154b8c1f60d99bb418c98}{Sphere}.\hypertarget{classObstacle_a7476b22bcd25e3731a0ef2aa5324afa0}{
+\index{Obstacle@{Obstacle}!draw@{draw}}
+\index{draw@{draw}!Obstacle@{Obstacle}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obstacle::draw () const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classObstacle_a7476b22bcd25e3731a0ef2aa5324afa0}
+
+
+draw the obstacle 
+
+Implemented in \hyperlink{classCube_ab4dbd130d15e86b30212dad3189d1016}{Cube}, and \hyperlink{classSphere_a75a92a2b70974147560dd8c0514b2652}{Sphere}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classObstacle_a0f812616869fc67cc7cb147f0e3524ef}{
+\index{Obstacle@{Obstacle}!m\_\-colour@{m\_\-colour}}
+\index{m\_\-colour@{m\_\-colour}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-colour}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Colour {\bf Obstacle::m\_\-colour}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_a0f812616869fc67cc7cb147f0e3524ef}
+
+
+colour \hypertarget{classObstacle_a60e24ee62597021b70f05e61b427132e}{
+\index{Obstacle@{Obstacle}!m\_\-elasticity@{m\_\-elasticity}}
+\index{m\_\-elasticity@{m\_\-elasticity}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-elasticity}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Obstacle::m\_\-elasticity}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_a60e24ee62597021b70f05e61b427132e}
+
+
+elasticity \hypertarget{classObstacle_aaaeea9917fde7abb8fa8ca2ac73e51cb}{
+\index{Obstacle@{Obstacle}!m\_\-parent@{m\_\-parent}}
+\index{m\_\-parent@{m\_\-parent}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf FluidSystem}$\ast$ {\bf Obstacle::m\_\-parent}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_aaaeea9917fde7abb8fa8ca2ac73e51cb}
+
+
+the parenting fluid system \hypertarget{classObstacle_a7e390fb6bbe3b281e56c192138c19a27}{
+\index{Obstacle@{Obstacle}!m\_\-pos@{m\_\-pos}}
+\index{m\_\-pos@{m\_\-pos}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-pos}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Obstacle::m\_\-pos}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_a7e390fb6bbe3b281e56c192138c19a27}
+
+
+center position of the obstacle \hypertarget{classObstacle_a83d931c2569ec99d17a483d7b88b2cdf}{
+\index{Obstacle@{Obstacle}!m\_\-shaderName@{m\_\-shaderName}}
+\index{m\_\-shaderName@{m\_\-shaderName}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-shaderName}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf Obstacle::m\_\-shaderName}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_a83d931c2569ec99d17a483d7b88b2cdf}
+
+
+shader name \hypertarget{classObstacle_ae8815e4278c8e141c38e306e89439c57}{
+\index{Obstacle@{Obstacle}!m\_\-simScale@{m\_\-simScale}}
+\index{m\_\-simScale@{m\_\-simScale}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-simScale}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Obstacle::m\_\-simScale}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_ae8815e4278c8e141c38e306e89439c57}
+
+
+simulation scale \hypertarget{classObstacle_a936746fd9203f709367d170255e5ad63}{
+\index{Obstacle@{Obstacle}!m\_\-size@{m\_\-size}}
+\index{m\_\-size@{m\_\-size}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}ngl::Vec3 {\bf Obstacle::m\_\-size}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_a936746fd9203f709367d170255e5ad63}
+
+
+dimensions of the obstacle \hypertarget{classObstacle_a00b57b81521105150839ba7b3846e95b}{
+\index{Obstacle@{Obstacle}!m\_\-timestep@{m\_\-timestep}}
+\index{m\_\-timestep@{m\_\-timestep}!Obstacle@{Obstacle}}
+\subsubsection[{m\_\-timestep}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf Obstacle::m\_\-timestep}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classObstacle_a00b57b81521105150839ba7b3846e95b}
+
+
+time step 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Obstacle_8h}{Obstacle.h}\item 
+src/\hyperlink{Obstacle_8cpp}{Obstacle.cpp}\end{DoxyCompactItemize}

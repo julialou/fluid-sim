@@ -1,0 +1,131 @@
+\hypertarget{Common_8h}{
+\section{include/Common.h File Reference}
+\label{Common_8h}\index{include/Common.h@{include/Common.h}}
+}
+
+
+Header file for common definitions used throughout the system.  
+{\ttfamily \#include $<$cstdlib$>$}\par
+{\ttfamily \#include $<$ngl/Vec3.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSimulationParams}{SimulationParams}
+\begin{DoxyCompactList}\small\item\em store parsed parameters for the system \item\end{DoxyCompactList}\item 
+struct \hyperlink{structFluidParams}{FluidParams}
+\begin{DoxyCompactList}\small\item\em store parsed parameters for fluid \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Common_8h_ad72dbcf6d0153db1b8d8a58001feed83}{DEBUG}~0
+\begin{DoxyCompactList}\small\item\em debug flag definition from Gianni at Stack Overflow \href{http://stackoverflow.com/questions/3371540/c-enable-disable-debug-messages-of-stdcouts-on-the-fly}{\tt http://stackoverflow.com/questions/3371540/c-\/enable-\/disable-\/debug-\/messages-\/of-\/stdcouts-\/on-\/the-\/fly} \item\end{DoxyCompactList}\item 
+\#define \hyperlink{Common_8h_af1206b4d3bda8c4c8c9257f369a9e9e1}{DEBUG\_\-MSG}(str)~do \{ \} while ( false )
+\item 
+\#define \hyperlink{Common_8h_a002b2f4894492820fe708b1b7e7c5e70}{EPSILON}~0.0001
+\begin{DoxyCompactList}\small\item\em error margin for collision tests \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3}{DrawMode} \{ \hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3adc0f401e772f1affa81071e70631abbf}{POINTS}, 
+\hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3a9d2cc316ab2e6e5637281696bebc6ffd}{DENSITY}, 
+\hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3aa2b65445a3a16f164c5e811064d75726}{RANDOM}, 
+\hyperlink{Common_8h_a9a325db332d24e6105fe3b48a94604c3a06e15744a8bd69fceeeb39ab3614b3f6}{VELOCITY}
+ \}
+\item 
+enum \hyperlink{Common_8h_a9852a22595ceae4debd70f078e037971}{ObstacleType} \{ \hyperlink{Common_8h_a9852a22595ceae4debd70f078e037971aae4f0962d104ea473feec5598689316d}{SPHERE}, 
+\hyperlink{Common_8h_a9852a22595ceae4debd70f078e037971ad9ff273a12ff18b3e1b900080aadd1ea}{CUBE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\T \hyperlink{Common_8h_ae46541f98ab0618cbfe51fb1d01e3774}{Sign} (T \_\-a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file for common definitions used throughout the system. \begin{DoxyAuthor}{Author}
+Julia Lou 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+26/03/2013 
+\end{DoxyDate}
+
+
+\subsection{Define Documentation}
+\hypertarget{Common_8h_ad72dbcf6d0153db1b8d8a58001feed83}{
+\index{Common.h@{Common.h}!DEBUG@{DEBUG}}
+\index{DEBUG@{DEBUG}!Common.h@{Common.h}}
+\subsubsection[{DEBUG}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEBUG~0}}
+\label{Common_8h_ad72dbcf6d0153db1b8d8a58001feed83}
+
+
+debug flag definition from Gianni at Stack Overflow \href{http://stackoverflow.com/questions/3371540/c-enable-disable-debug-messages-of-stdcouts-on-the-fly}{\tt http://stackoverflow.com/questions/3371540/c-\/enable-\/disable-\/debug-\/messages-\/of-\/stdcouts-\/on-\/the-\/fly} \hypertarget{Common_8h_af1206b4d3bda8c4c8c9257f369a9e9e1}{
+\index{Common.h@{Common.h}!DEBUG\_\-MSG@{DEBUG\_\-MSG}}
+\index{DEBUG\_\-MSG@{DEBUG\_\-MSG}!Common.h@{Common.h}}
+\subsubsection[{DEBUG\_\-MSG}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEBUG\_\-MSG(str)~do \{ \} while ( false )}}
+\label{Common_8h_af1206b4d3bda8c4c8c9257f369a9e9e1}
+\hypertarget{Common_8h_a002b2f4894492820fe708b1b7e7c5e70}{
+\index{Common.h@{Common.h}!EPSILON@{EPSILON}}
+\index{EPSILON@{EPSILON}!Common.h@{Common.h}}
+\subsubsection[{EPSILON}]{\setlength{\rightskip}{0pt plus 5cm}\#define EPSILON~0.0001}}
+\label{Common_8h_a002b2f4894492820fe708b1b7e7c5e70}
+
+
+error margin for collision tests 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{Common_8h_a9a325db332d24e6105fe3b48a94604c3}{
+\index{Common.h@{Common.h}!DrawMode@{DrawMode}}
+\index{DrawMode@{DrawMode}!Common.h@{Common.h}}
+\subsubsection[{DrawMode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DrawMode}}}
+\label{Common_8h_a9a325db332d24e6105fe3b48a94604c3}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{POINTS@{POINTS}!Common.h@{Common.h}}\index{Common.h@{Common.h}!POINTS@{POINTS}}\item[{\em 
+\hypertarget{Common_8h_a9a325db332d24e6105fe3b48a94604c3adc0f401e772f1affa81071e70631abbf}{
+POINTS}
+\label{Common_8h_a9a325db332d24e6105fe3b48a94604c3adc0f401e772f1affa81071e70631abbf}
+}]\index{DENSITY@{DENSITY}!Common.h@{Common.h}}\index{Common.h@{Common.h}!DENSITY@{DENSITY}}\item[{\em 
+\hypertarget{Common_8h_a9a325db332d24e6105fe3b48a94604c3a9d2cc316ab2e6e5637281696bebc6ffd}{
+DENSITY}
+\label{Common_8h_a9a325db332d24e6105fe3b48a94604c3a9d2cc316ab2e6e5637281696bebc6ffd}
+}]\index{RANDOM@{RANDOM}!Common.h@{Common.h}}\index{Common.h@{Common.h}!RANDOM@{RANDOM}}\item[{\em 
+\hypertarget{Common_8h_a9a325db332d24e6105fe3b48a94604c3aa2b65445a3a16f164c5e811064d75726}{
+RANDOM}
+\label{Common_8h_a9a325db332d24e6105fe3b48a94604c3aa2b65445a3a16f164c5e811064d75726}
+}]\index{VELOCITY@{VELOCITY}!Common.h@{Common.h}}\index{Common.h@{Common.h}!VELOCITY@{VELOCITY}}\item[{\em 
+\hypertarget{Common_8h_a9a325db332d24e6105fe3b48a94604c3a06e15744a8bd69fceeeb39ab3614b3f6}{
+VELOCITY}
+\label{Common_8h_a9a325db332d24e6105fe3b48a94604c3a06e15744a8bd69fceeeb39ab3614b3f6}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{Common_8h_a9852a22595ceae4debd70f078e037971}{
+\index{Common.h@{Common.h}!ObstacleType@{ObstacleType}}
+\index{ObstacleType@{ObstacleType}!Common.h@{Common.h}}
+\subsubsection[{ObstacleType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ObstacleType}}}
+\label{Common_8h_a9852a22595ceae4debd70f078e037971}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{SPHERE@{SPHERE}!Common.h@{Common.h}}\index{Common.h@{Common.h}!SPHERE@{SPHERE}}\item[{\em 
+\hypertarget{Common_8h_a9852a22595ceae4debd70f078e037971aae4f0962d104ea473feec5598689316d}{
+SPHERE}
+\label{Common_8h_a9852a22595ceae4debd70f078e037971aae4f0962d104ea473feec5598689316d}
+}]\index{CUBE@{CUBE}!Common.h@{Common.h}}\index{Common.h@{Common.h}!CUBE@{CUBE}}\item[{\em 
+\hypertarget{Common_8h_a9852a22595ceae4debd70f078e037971ad9ff273a12ff18b3e1b900080aadd1ea}{
+CUBE}
+\label{Common_8h_a9852a22595ceae4debd70f078e037971ad9ff273a12ff18b3e1b900080aadd1ea}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{Common_8h_ae46541f98ab0618cbfe51fb1d01e3774}{
+\index{Common.h@{Common.h}!Sign@{Sign}}
+\index{Sign@{Sign}!Common.h@{Common.h}}
+\subsubsection[{Sign}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T Sign (T {\em \_\-a})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{Common_8h_ae46541f98ab0618cbfe51fb1d01e3774}

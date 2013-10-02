@@ -1,0 +1,73 @@
+\hypertarget{classCube}{
+\section{Cube Class Reference}
+\label{classCube}\index{Cube@{Cube}}
+}
+
+
+{\ttfamily \#include $<$Cube.h$>$}Inheritance diagram for Cube::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classCube}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCube_a4e53462d63d55146162a2b0dec143b9c}{Cube} (const ngl::Vec3 \&\_\-pos, const ngl::Colour \&\_\-colour, ngl::Vec3 \_\-size, const std::string \&\_\-shaderName, const struct \hyperlink{structSimulationParams}{SimulationParams} \&\_\-params, \hyperlink{classFluidSystem}{FluidSystem} $\ast$\_\-parent)
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classCube_aa814e979cecb8c451fdb332ded2cea1e}{$\sim$Cube} ()
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classCube_ab4dbd130d15e86b30212dad3189d1016}{draw} () const 
+\begin{DoxyCompactList}\small\item\em draw the sphere \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classCube_a6e53f829d8ebcbd53ea462e53d07f64f}{checkCollision} (\hyperlink{classParticle}{Particle} \&\_\-particle)
+\begin{DoxyCompactList}\small\item\em collide with a particle \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCube_a4e53462d63d55146162a2b0dec143b9c}{
+\index{Cube@{Cube}!Cube@{Cube}}
+\index{Cube@{Cube}!Cube@{Cube}}
+\subsubsection[{Cube}]{\setlength{\rightskip}{0pt plus 5cm}Cube::Cube (const ngl::Vec3 \& {\em \_\-pos}, \/  const ngl::Colour \& {\em \_\-colour}, \/  ngl::Vec3 {\em \_\-size}, \/  const std::string \& {\em \_\-shaderName}, \/  const struct {\bf SimulationParams} \& {\em \_\-params}, \/  {\bf FluidSystem} $\ast$ {\em \_\-parent})}}
+\label{classCube_a4e53462d63d55146162a2b0dec143b9c}
+
+
+constructor 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-pos}]center position of the cube in world coordinates \item[\mbox{$\leftarrow$} {\em \_\-colour}]color of the cube \item[\mbox{$\leftarrow$} {\em \_\-size}]dimension fo the cube \item[\mbox{$\leftarrow$} {\em \_\-shaderName}]shader to use \item[\mbox{$\leftarrow$} {\em \_\-params}]simulation parameters \item[\mbox{$\leftarrow$} {\em \_\-parent}]fluid system to which this obstacle belongs \end{DoxyParams}
+\hypertarget{classCube_aa814e979cecb8c451fdb332ded2cea1e}{
+\index{Cube@{Cube}!$\sim$Cube@{$\sim$Cube}}
+\index{$\sim$Cube@{$\sim$Cube}!Cube@{Cube}}
+\subsubsection[{$\sim$Cube}]{\setlength{\rightskip}{0pt plus 5cm}Cube::$\sim$Cube ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCube_aa814e979cecb8c451fdb332ded2cea1e}
+
+
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCube_a6e53f829d8ebcbd53ea462e53d07f64f}{
+\index{Cube@{Cube}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Cube@{Cube}}
+\subsubsection[{checkCollision}]{\setlength{\rightskip}{0pt plus 5cm}void Cube::checkCollision ({\bf Particle} \& {\em \_\-particle})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCube_a6e53f829d8ebcbd53ea462e53d07f64f}
+
+
+collide with a particle 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-particle}]the particle to check with \end{DoxyParams}
+
+
+Implements \hyperlink{classObstacle_ae35a1937df593d5caf25c5545acbaffd}{Obstacle}.\hypertarget{classCube_ab4dbd130d15e86b30212dad3189d1016}{
+\index{Cube@{Cube}!draw@{draw}}
+\index{draw@{draw}!Cube@{Cube}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Cube::draw () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classCube_ab4dbd130d15e86b30212dad3189d1016}
+
+
+draw the sphere 
+
+Implements \hyperlink{classObstacle_a7476b22bcd25e3731a0ef2aa5324afa0}{Obstacle}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Cube_8h}{Cube.h}\item 
+src/\hyperlink{Cube_8cpp}{Cube.cpp}\end{DoxyCompactItemize}

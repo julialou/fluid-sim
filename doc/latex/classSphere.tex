@@ -1,0 +1,73 @@
+\hypertarget{classSphere}{
+\section{Sphere Class Reference}
+\label{classSphere}\index{Sphere@{Sphere}}
+}
+
+
+{\ttfamily \#include $<$Sphere.h$>$}Inheritance diagram for Sphere::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classSphere}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSphere_a6452552678bc35d4621e3ec9272d34a0}{Sphere} (const ngl::Vec3 \&\_\-pos, const ngl::Colour \&\_\-colour, const ngl::Vec3 \&\_\-size, const std::string \&\_\-shaderName, const struct \hyperlink{structSimulationParams}{SimulationParams} \&\_\-params, \hyperlink{classFluidSystem}{FluidSystem} $\ast$\_\-parent)
+\begin{DoxyCompactList}\small\item\em constructor \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classSphere_a569c071e50a3e11f678630ee1a17737e}{$\sim$Sphere} ()
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classSphere_a75a92a2b70974147560dd8c0514b2652}{draw} () const 
+\begin{DoxyCompactList}\small\item\em draw the sphere \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classSphere_a0a18ee7f656154b8c1f60d99bb418c98}{checkCollision} (\hyperlink{classParticle}{Particle} \&\_\-particle)
+\begin{DoxyCompactList}\small\item\em collide with a particle \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSphere_a6452552678bc35d4621e3ec9272d34a0}{
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\subsubsection[{Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Sphere::Sphere (const ngl::Vec3 \& {\em \_\-pos}, \/  const ngl::Colour \& {\em \_\-colour}, \/  const ngl::Vec3 \& {\em \_\-size}, \/  const std::string \& {\em \_\-shaderName}, \/  const struct {\bf SimulationParams} \& {\em \_\-params}, \/  {\bf FluidSystem} $\ast$ {\em \_\-parent})}}
+\label{classSphere_a6452552678bc35d4621e3ec9272d34a0}
+
+
+constructor 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-pos}]center position of the sphere in world coordinates \item[\mbox{$\leftarrow$} {\em \_\-colour}]color of the sphere \item[\mbox{$\leftarrow$} {\em \_\-size}]dimension fo the sphere \item[\mbox{$\leftarrow$} {\em \_\-shaderName}]shader to use \item[\mbox{$\leftarrow$} {\em \_\-params}]simulation parameters \item[\mbox{$\leftarrow$} {\em \_\-parent}]fluid system to which this obstacle belongs \end{DoxyParams}
+\hypertarget{classSphere_a569c071e50a3e11f678630ee1a17737e}{
+\index{Sphere@{Sphere}!$\sim$Sphere@{$\sim$Sphere}}
+\index{$\sim$Sphere@{$\sim$Sphere}!Sphere@{Sphere}}
+\subsubsection[{$\sim$Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Sphere::$\sim$Sphere ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSphere_a569c071e50a3e11f678630ee1a17737e}
+
+
+destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSphere_a0a18ee7f656154b8c1f60d99bb418c98}{
+\index{Sphere@{Sphere}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Sphere@{Sphere}}
+\subsubsection[{checkCollision}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere::checkCollision ({\bf Particle} \& {\em \_\-particle})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSphere_a0a18ee7f656154b8c1f60d99bb418c98}
+
+
+collide with a particle 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \_\-particle}]particle to collide with \end{DoxyParams}
+
+
+Implements \hyperlink{classObstacle_ae35a1937df593d5caf25c5545acbaffd}{Obstacle}.\hypertarget{classSphere_a75a92a2b70974147560dd8c0514b2652}{
+\index{Sphere@{Sphere}!draw@{draw}}
+\index{draw@{draw}!Sphere@{Sphere}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere::draw () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSphere_a75a92a2b70974147560dd8c0514b2652}
+
+
+draw the sphere 
+
+Implements \hyperlink{classObstacle_a7476b22bcd25e3731a0ef2aa5324afa0}{Obstacle}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{Sphere_8h}{Sphere.h}\item 
+src/\hyperlink{Sphere_8cpp}{Sphere.cpp}\end{DoxyCompactItemize}
